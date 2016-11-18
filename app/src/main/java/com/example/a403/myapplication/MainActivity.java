@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
         b2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                result = Integer.parseInt(Et1.getText().toString()) + Integer.parseInt(Et2.getText().toString());
+                result = Integer.parseInt(Et1.getText().toString()) - Integer.parseInt(Et2.getText().toString());
                 TextResult.setText("계산결과 : " + result);
             }
         });
