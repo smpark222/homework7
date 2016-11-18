@@ -49,5 +49,16 @@ public class MainActivity extends AppCompatActivity {
                 TextResult.setText("계산결과 : " + result);
             }
         });
+        b4.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                if (Integer.parseInt(Et2.getText().toString()) == 0) {
+                    TextResult.setText("divide by zero");
+                }
+                else {
+                    result = Integer.parseInt(Et1.getText().toString()) / Integer.parseInt(Et2.getText().toString());
+                    TextResult.setText("계산결과 : " + result);
+                }
+            }
+        });
     }
 }
