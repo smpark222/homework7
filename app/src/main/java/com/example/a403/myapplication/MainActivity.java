@@ -43,5 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 TextResult.setText("계산결과 : " + result);
             }
         });
+        b3.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                result = Integer.parseInt(Et1.getText().toString()) * Integer.parseInt(Et2.getText().toString());
+                TextResult.setText("계산결과 : " + result);
+            }
+        });
     }
 }
